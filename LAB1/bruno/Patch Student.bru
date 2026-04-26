@@ -1,0 +1,17 @@
+meta {
+  name: Patch Student
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:3000/students/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Alaa Patched"
+  }
+}
